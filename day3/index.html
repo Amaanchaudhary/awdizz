@@ -27,32 +27,44 @@
         <li class="colred">mongoDB</li>
         <li class="colred">MySQL</li>
     </0l> -->
-    <div style="font-size: 30px; width: 13%; margin : auto;">
-    <label>Email ID </label><br/>
-    <input type="text" placeholder="@gmail.com"><br/>
-    <label>Password</label><br/>
-    <input type="password"><br/>
-    <input type="submit" value="Login"><br/>
+    <div style="font-size: 20px; width: 40%; margin : auto; border: 3px solid black;">
+    <!-- <div style="font-size: 20px; text-align: center; border: 1px solid black; border-radius: 50px;">     -->
+    <label>Name  :</label>
+    <input type="input" placeholder="Name" size="20px"><br>    
+    <label>Phone No :</label>
+    <input type="input" placeholder="999****" size="20px"><br>    
+    <label>Email ID : </label>
+    <input type="text" placeholder="@gmail.com" size="20px"><br/>
+    <label>Password : </label>
+    <input id="xyz" type="password" size="20" required><br/>
+    <label>Gender : </label>
+    <input type="radio">Male
+    <input type="radio">Female <br>
+    <label>Date of Birth : </label>
+    <input type="date"><br>
+    <label>Qualification : </label>
+    <input type="checkbox">SSC
+    <input type="checkbox">HSC
+    <input type="checkbox">Graduate<br>
+    <label>Fav Color : </label>
+    <input type="color"/><br>
+    <label>Our Page Rating</label>
+    <input type="range"/><br>
+    <input onclick="submitdata()" type="button" value="Login">
     </div>
 
-    <input type="button" value="Login"><br>
-    <input type="radio">Blue<br>
-    <input type="radio">green<br>
-    <input type="checkbox">samosa  <br>
-    <input type="checkbox">vada  <br>
-    <input type="color"><br>
-    <input type="date"><br>
+    
 
+    
+<!-- 
     <iframe src="https://swaraj-jadhav.netlify.app"></iframe><br>
+-->
 
-    <input id="xyz" placeholder="Name.."/>
-    <button onclick="submitdata()">Clickhere</button>
-
-    <form onsubmit="submitdata()">
+    <!-- <form onsubmit="submitdata()">
     <input type="email" required/>
-   <input type="submit" value="Login"/>
-   
-   <script src="./index.js"></script>
+   <input type="submit" value="Submit"/> -->
+    
+   <script src="./index.js"></script> 
     </form>
 </body>
 </html>
