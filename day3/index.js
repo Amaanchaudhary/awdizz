@@ -5,7 +5,7 @@ function submitdata(){
     var password = document.getElementById("xyz").value;
     if(password.length < 9){
         // return console.log("password should be 8");
-        return  alert("password should be 8");
+        return alert("password should be 8");
     }
-    console.log(password,"---is password");
+    alert("Registration Successfull");
 }
