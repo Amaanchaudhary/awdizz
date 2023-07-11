@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .colblue{
-            color:blue
+        .colblue {
+            color: blue
         }
-        .colred{
-            color:red
+
+        .colred {
+            color: red
         }
     </style>
 </head>
+
 <body>
     <!-- <div style="background-image: url(./../images\ \(2\).jpeg);
     background-size: 100% 100%;
@@ -27,64 +30,74 @@
         <li class="colred">mongoDB</li>
         <li class="colred">MySQL</li>
     </0l> -->
-    <div style="font-size: 20px;background-color: blanchedalmond; width: 400px; margin : auto; border: 3px solid brown;">
-        <h2 style="color:blue">Fill your details</h2>
-    <!-- <div style="font-size: 20px; text-align: center; border: 1px solid black; border-radius: 50px;">     -->
-    <table style="text-align: left;">
-        <thead>
-            <th>Name  :</th>
-            <th><input type="input" placeholder="Name" size="20px"></th>
-        </thead>
-        <thead>
-            <th>Phone No :</th>
-            <th><input type="input" placeholder="9999***" size="20px"></th>
-        </thead>
-        <thead>
-            <th>Email ID : </th>
-            <th><input type="email" placeholder="@gmail.com" size="20px"></th>
-        </thead>
-        <thead>
-            <th>Password : </th>
-            <th><input id="xyz" type="password" size="20" required></th>
-        </thead>
-        <thead>
-            <th>Gender :  </th>
-            <th><input type="radio" name="Amaan">Male
-                <input type="radio" name="Amaan">Female <br></th>
-        </thead>
-        <thead>
-            <th>Date of Birth : </th>
-            <th><input type="date"></th>
-        </thead>
-        <thead>
-            <th>Qualification : </th>
-            <th><input type="checkbox">SSC
-                <input type="checkbox">HSC
-                <input type="checkbox">Graduate</th>
-        </thead>
-        <thead>
-            <th>Fav Color : </th>
-            <th><input type="color"/></th>
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
-</div>
-<div style="text-align: center;">
-    <input onclick="submitdata()" type="button" value="Register"; style="background-color: blue;">
-</div>
-    
+    <div
+        style="font-size: 20px;background-color: blanchedalmond; width: 400px; margin : auto; border: 3px solid brown;">
+        <h2 style="margin-left: 90px; color: blue; margin-top: 10px; margin-bottom: 10px;" >Fill your details</h2>
+        <!-- <div style="font-size: 20px; text-align: center; border: 1px solid black; border-radius: 50px;">     -->
+        <table style="text-align: left;">
+            <thead>
+                <th>Name :</th>
+                <th><input type="input" placeholder="Name" size="20px"></th>
+            </thead>
+            <thead>
+                <th>Phone No :</th>
+                <th><input type="input" placeholder="9999***" size="20px"></th>
+            </thead>
+            <thead>
+                <th>Email ID : </th>
+                <th><input type="email" placeholder="@gmail.com" size="20px"></th>
+            </thead>
+            <thead>
+                <th>Password : </th>
+                <th><input id="xyz" type="password" size="20" required></th>
+            </thead>
+            <thead>
+                <th>Gender : </th>
+                <th><input type="radio" name="Amaan">Male
+                    <input type="radio" name="Amaan">Female <br>
+                </th>
+            </thead>
+            <thead>
+                <th>Date of Birth : </th>
+                <th><input type="date"></th>
+            </thead>
+            <thead>
+                <th>Qualification : </th>
+                <th>
+                    <form>
+                    <label for="qual">SSC</label>
+                    <input type="checkbox" id="qual">
+                    <label for="qual1">HSC</label>
+                    <input type="checkbox" id="qual1">
+                    <label for="qual2">Graduate</label>
+                    <input type="checkbox" id="qual2">
+                </form>
+                </th>
+            </thead>
+            <thead>
+                <th>Fav Color : </th>
+                <th><input type="color" /></th>
+            </thead>
+            <tbody>
 
-   <!-- 
+            </tbody>
+        </table>
+    </div>
+    <div style="text-align: center;">
+        <input onclick="submitdata()" type="button" value="Register" ; style="background-color: blue; color: aliceblue; border-radius: 5px; margin-top: 10px; height: 30px;">
+    </div>
+
+
+    <!-- 
     <iframe src="https://swaraj-jadhav.netlify.app"></iframe><br>
    -->
 
     <!-- <form onsubmit="submitdata()">
     <input id="xyz" type="email" required/>
    <input type="submit" value="Submit"/> -->
-    
-   <script src="./index.js"></script> 
+
+    <script src="./index.js"></script>
     </form>
 </body>
+
 </html>
