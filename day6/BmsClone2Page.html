@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, sans-serif;
+        }
+
+        #M-Imp {
+            background-repeat: no-repeat;
+            background-size: 95% 100%;
+            /* background-attachment: fixed; */
+            background-image:
+                /* -webkit-linear-gradient(top,
+                    rgba(0, 0, 0, 0.9) 0%,
+                    rgba(0, 0, 0, 0) 20%,
+                    rgba(0, 0, 0, 0) 80%,
+                    rgba(0, 0, 0, 0.9) 100%), */
+                -webkit-linear-gradient(left,
+                    #1A1A1A 30%,
+                    rgba(0, 0, 0, 0.938) 45%,
+                    rgba(0, 0, 0, 0) 95%,
+                    rgba(0, 0, 0, 0.9) 100%),
+                url(https://assets-in.bmscdn.com/discovery-catalog/events/et00329481-qwulpftqfe-landscape.jpg);
+            height: 500px;
+            width: 100%;
+            /* border: 5px solid green; */
+            background-color: #1A1A1A;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #image {
+            width: 20%;
+            height: 400px;
+            /* border: 1px solid white; */
+            margin-left: 50px;
+            margin-top: 50px;
+            background-color: black;
+            border-radius: 15px;
+
+        }
+
+        #image img {
+            width: 100%;
+            height: 93%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+        #image p {
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        #details {
+            width: 73%;
+            height: 440px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            color: white
+        }
+
+        #star-icon {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            width: 220px;
+            /* border: 1px solid white; */
+        }
+
+        #rating {
+            width: 450px;
+            height: 70px;
+            margin-top: 20px;
+            /* border: 1px solid green; */
+            background-color: #333333;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+        #rating button {
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1px solid white;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+
+        #SCRN {
+            height: 30px;
+            width: 350PX;
+            border-radius: 3px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            background-color: white;
+            color: black;
+        }
+
+        #lang {
+            height: 30px;
+            width: 220PX;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            background-color: white;
+            color: black;
+        }
+
+        #button {
+            height: 50px;
+            width: 220px;
+            background-color: #f84464;
+            color: white;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: none;
+        }
+
+        #D-left {
+            height: 100%;
+            width: 50%;
+            /* border: 3px solid yellow; */
+        }
+
+        #D-right {
+            width: 14%;
+            margin-right: 60px;
+            height: 50px;
+            background-color: #3a3939;
+            /* border:3px solid white; */
+            border-radius: 3px;
+            opacity: 0.8;
+            display: flex;
+            justify-content: space-between;
+        }
+    </Style>
+</head>
+
+<body>
+    <div id="Screen" style="border: 1px solid black; width: 100%;">
+
+        <div
+            style="background-color:#333545; border: 1px solid black; color:white;height: 65px; display: flex; justify-content: space-between;">
+            <div style="display: flex; justify-content: space-between;">
+
+                <div style="margin-right: 18px;">
+                    <img src="./bookmyshow.jpg" style="height: 60px; width: 120px; margin-left: 40px; " />
+                </div>
+
+                <div
+                    style="background-color: white; height: 36px; margin-top: 13px; margin-bottom: 12px ; width: 550px; border-radius: 5px; display: flex;">
+                    <div
+                        style="color: grey; margin-top: 12px; margin-left: 12px; margin-bottom:15px; margin-right: 12px;">
+                        <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+                    </div>
+
+                    <div style="margin-top: 10px;">
+                        <input placeholder="Search for Movies, Event, Plays, Sports and Activities"
+                            style="border: none; outline: none; width: 350px; font-size: 14px; " />
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="display: flex;">
+                <div style="margin-right: 4px; margin-top: 23px; height: 10px;">
+                    <select style="background-color: #333545; color: gainsboro; border: none;">
+                        <option>Mumbai</option>
+                        <option>delhi</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="button" value="Sign in"
+                        style="background-color:#f84464; border: none; border-radius: 5px; height: 25px; color: white; width: 65px; margin-top: 20px; margin-right: 30px;margin-left: 20px; font-size: 12px;" />
+                </div>
+                <div style="margin-top: 25px; margin-right: 50px;">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:#222539; width: 100%; height: 40px;">
+            <div style=" display: flex; justify-content: space-between; width: 93%; margin: auto; height: 40px;  ">
+                <div
+                    style="color: rgba(245, 245, 245, 0.775);  display: flex; justify-content: space-between; width: 410px;">
+                    <span style="margin-top: 10px; font-size: 14px; ">Movies</span>
+                    <span style="margin-top: 10px; font-size: 14px; ">
+                        <p style="font-size: 8px; margin-left: 40px; color: red; "></p>
+                        Stream
+                    </span>
+                    <span style="margin-top: 10px; font-size: 14px;">Events</span>
+                    <span style="margin-top: 10px; font-size: 14px;">Plays</span>
+                    <span style="margin-top: 10px;font-size: 14px;">Sports</span>
+                    <span style="margin-top: 10px; font-size: 14px;">Activities</span>
+                    <span style="margin-top: 10px; font-size: 14px;">Buzz</span>
+                </div>
+
+                <div style="color: white ;  width: 280px;display: flex; justify-content: space-between;">
+                    <span style="font-size: 12px; margin-top: 12px;">ListYourShow</span>
+                    <span style="font-size: 12px; margin-top: 12px;">Corporates</span>
+                    <span style="font-size: 12px; margin-top: 12px;">Offers</span>
+                    <span style="font-size: 12px; margin-top: 12px;">Gift Cards</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="M-Imp">
+        <div id="image">
+            <img
+                src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/mission-impossible-dead-reckoning--part-one-et00329481-1688284554.jpg" />
+            <p>In cinemas</p>
+        </div>
+        <div id="details">
+            <div id="D-left">
+                <h1 style="font-size: 35px;">Mission Impossible:Dead<br>Reckoning - Part One</h1>
+                <div id="star-icon">
+                    <i class="fa-solid fa-star fa-2xl" style=" color: #f84464; margin-top: 10px;"></i>
+                    <h2>9.2/10</h2>
+                    <span style="margin-top: 5px;">48.8k Votes ></span>
+                </div>
+                <div id="rating">
+                    <div style="padding: 15px; padding-left: 20px;">
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Add your rating & review</h3>
+                        <p style="color: rgb(170, 169, 169);">Your ratings matter</p>
+                    </div>
+                    <div>
+                        <button>
+                            <h4 style="color: #333333; font-size: 18px; font-weight: 600;">Rate now</h4>
+                        </button>
+                    </div>
+                </div>
+                <div id="SCRN">
+                    <p style="margin-left: 5px; margin-top: 5px;">2D, ICE, MX4D, 4DX, IMAX 2D, 2D SCREEN X</p>
+                </div>
+                <div id="lang">
+                    <p style="margin-left: 5px; margin-top: 5px;">English, Hindi, Tamil, Telugu</p>
+                </div>
+
+                <p style="margin-top: 20px; word-spacing: 3px;">2h 45m &bull; Action, Adventure, Thriller &bull; UA
+                    &bull; 12 jul, 2023</p>
+
+                <button id="button">
+                    <H3>Book ticket</H3>
+                </button>
+
+
+            </div>
+            <div id="D-right">
+                <i class="fa-thin fa-share-nodes fa-32px" ></i>
+                <p style="color: rgba(255, 255, 255, 0.991); font-size: large; margin-top: 14px; margin-right: 15px; ">Share</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
