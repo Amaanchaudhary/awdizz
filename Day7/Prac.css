@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    width: 85%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#screen{  
+    /* border: 3px solid green; */
+    height: 600px;
+    padding-top: 50px;
+    width: 100%;
+    background-image: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/07/CSS-background-gradient-featured.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#main{
+    background-color: rgb(1, 53, 69);
+    margin-top: 50px;
+    height: 220px;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    color:  rgb(0, 255, 170) ;
+    padding-left: 20px;
+}
+.free{
+    width: 45px;
+    height: 20px;
+    background-color: rgba(33, 150, 111, 0.345);
+    border: none;
+    /* margin-left: 10px; */
+    margin-top: 20px;
+    border-radius: 2px;
+    color: rgb(0, 255, 170) ;
+}
+#main h1{
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span.skills{
+    font-size: 14px;
+}
+
+#icon{
+    display: flex;
+    margin-right: 90%;
+}
+#icon2{
+    display: flex;
+    margin-top: 10px;
+    /* border: 1px solid white; */
+    margin-right: 90%;
+    margin-bottom: 10px;
+}
+#bottom{
+    display: flex;
+    /* border: 1px solid white; */
+    width: 90%;
+    height: 30px;
+    margin-right:90%;
+}
+#bottom > div{
+    border: 1px solid rgb(0, 255, 170) ;;
+    height: 15px;
+    margin-left: 0;
+    border-radius: 2px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+.W-1{
+    width: 35px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.W-2{
+    width: 190px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.W-3{
+    width: 100px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#circle{
+    margin-top: 50px;
+    /* border: 1px solid white; */
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+#circle > div{
+    /* border: 1px solid black; */
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(37, 121, 93);
+    /* margin-right: 10px;     */
+}
+
+#circle div p{
+    margin-top: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+#proj{
+    /* border: 1px solid red; */
+    width: 250px;
+    height: 60px;
+    margin-left: 70%;
+    margin-top: 50px;
+    background-color: rgb(1, 53, 69);
+    border-radius: 5px;
+}
