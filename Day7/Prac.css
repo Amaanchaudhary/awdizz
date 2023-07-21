@@ -48,12 +48,14 @@ span.skills{
     margin-right: 90%;
 }
 #icon2{
-    display: flex;
+    /* display: flex;   */
     margin-top: 10px;
     /* border: 1px solid white; */
-    margin-right: 90%;
+    margin-right: 150px;
     margin-bottom: 10px;
 }
+
+
 #bottom{
     display: flex;
     /* border: 1px solid white; */
