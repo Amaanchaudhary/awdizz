@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* normal pc view */
+        #parent{
+            /* height: 1000px; */
+            width: 100%;
+            border: 1px solid green;
+            display: flex;
+            justify-content: space-between;
+        }
+        #parent > div{
+            height: 200px;
+            width: 30%;
+            border: 2px solid black;
+            color: aliceblue;
+            background-color: brown;
+        }
+
+        /* mobile view */
+        @media screen and (max-width: 450px) {
+            #parent{
+                flex-direction: column;
+                text-align: center;
+            }
+            #parent > div{
+                background-color: aqua;
+                text-decoration: underline;
+                font-size: 30px;
+                width: 80%;
+                color: black;
+                margin: auto;
+                margin-top: 10px;
+            }
+            #parent>div:hover{
+                font-size: 50px;
+            }
+        }
+        /* tablet view */
+
+        @media screen and (min-width: 451px) and (max-width:800px) {
+            #parent{
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            #parent > div{
+                background-color: blueviolet;
+                text-decoration: overline;
+                font-size: 30px;
+                width: 80%;
+                color: black;
+                margin: auto;
+                margin-top: 10px;
+                padding-top: 70px;
+            }
+            #parent>div:hover{
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>Hello I Am first div</div>
+        <div>Hello I Am Second div</div>
+        <div>Hello I Am third div</div>
+    </div>
+</body>
+</html>
