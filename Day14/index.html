@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent{
+            border: 3px solid black;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            padding-top: 30%;
+            justify-content: space-between;
+
+        }
+        #grandparent > div{
+            border: 2px solid blue;
+            width: 30%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        #grandparent > div:nth-child(2) > div{
+            border: 2px solid red;
+            height: 40px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #grandparent > div:nth-child(2) > div:nth-child(3) > div{
+            border: 2px solid black;
+            width: 30%;
+            
+        }
+
+        @media screen and (max-width: 450px){
+            #grandparent{
+                flex-direction: column;
+                border: 3px solid green;
+                height: 650px;
+                padding-top: 0%;
+            }
+            #grandparent > div{
+                width: 100%;
+                flex-direction: row;
+            }
+            #grandparent > div:nth-child(2) > div{
+                height: 80%;
+                flex-direction: column;
+            }
+            #grandparent > div:nth-child(2) > div:nth-child(3) > div{
+                width: 90%;    
+            }
+            #grandparent > div:nth-child(2) > div:nth-child(2){
+                display: none    ;
+            }  
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div>1child</div>
+        <div>2child
+            <div>1grandchild</div>
+            <div>2grandchild</div>
+            <div>3grandchild
+                <div>1great grand child</div>
+                <div>2great grand child</div>
+            </div>
+        </div>
+        <div>3child</div>
+    </div>
+</body>
+</html>

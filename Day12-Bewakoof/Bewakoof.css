@@ -12,7 +12,6 @@
 }
 
 #navbar {
-    /* overflow: hidden; */
     background-color: white;
     position: sticky;
     width: 100%;
@@ -588,7 +587,7 @@
 .header {
     height: 15%;
     width: 100%;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 #Footer-content h4 {
@@ -600,7 +599,16 @@
 .mid {
     height: 40%;
     width: 100%;
-    /* border: 1px solid white; */
+    border: 1px solid white;
+}
+#semi-mid{
+    border: 1px solid red;
+}
+#semi-mid2{
+    border: 1px solid red;
+    height: 30px;
+    margin-top: 5px;
+    width: 60%;
 }
 
 #Footer-content p {
@@ -611,8 +619,16 @@
 }
 
 .end {
-    /* border: 1px solid white; */
+    border: 1px solid white;
     height: 30%;
+    color: white;
     width: 100%;
     margin-top: 10px;
+}
+.EndImg{
+    /* border: 1px solid green; */
+    height: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
