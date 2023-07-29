@@ -602,15 +602,18 @@
     border: 1px solid white;
 }
 #semi-mid{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #semi-mid2{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 30px;
-    margin-top: 5px;
-    width: 60%;
+    margin-top: 10px;
+    width: 55%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
-
+  
 #Footer-content p {
     color: white;
     font-size: 12px;
@@ -631,4 +634,10 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+}
+.PaymentModes{
+    border: 1px solid green;
+    height: 20px;
+    width: 100%;
+    margin-top: 20px;
 }
