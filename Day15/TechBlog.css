@@ -219,7 +219,7 @@
 }
 
 #Readmore2 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 44px;
     width: 160px;
     display: flex;
