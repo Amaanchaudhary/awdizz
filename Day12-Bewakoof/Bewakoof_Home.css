@@ -6,14 +6,15 @@
 }
 
 #Screen {
-    height: 7000px;
+    height: 6400px;
     width: 100%;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 #navbar {
     background-color: white;
     position: sticky;
+    z-index: 1;
     width: 100%;
     top: 0;
 }
@@ -199,6 +200,10 @@
     font-size: 12px;
     display: flex;
     justify-content: space-between;
+}
+#semi-nav3 a{
+    color: #181818;
+    text-decoration: none;
 }
 
 #body1 {

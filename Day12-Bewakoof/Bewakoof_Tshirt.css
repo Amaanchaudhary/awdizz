@@ -1,0 +1,707 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+#Screen {
+    /* border: 3px solid green; */
+    width: 100%;
+    height: 4300px;
+}
+
+#navbar {
+    background-color: white;
+    position: sticky;
+    border-bottom: 1px solid grey;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+
+#nav1 {
+    height: 30px;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid blue; */
+    background-color: #EEEEEE;
+    font-weight: 100;
+    color: rgb(56, 56, 56);
+}
+
+#semi-nav1 {
+    height: 30px;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#semi-left {
+    /* border: 1px solid black; */
+    width: 300px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+#semi-left1 {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+
+#semi-left2 {
+    display: flex;
+    justify-content: space-between;
+    width: 10px;
+    margin-left: 15px;
+}
+
+#semi-left3 {
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+}
+
+#semi-right {
+    /* border: 1px solid black; */
+    width: 130px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+#nav2 {
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav2-left {
+    /* border: 1px solid black; */
+    width: 470px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Logo {
+    width: 150px;
+    height: 50px;
+    /* border: 1px solid black; */
+}
+
+#Logo2 {
+    width: 50px;
+    height: 30px;
+    display: none;
+    /* border: 1px solid black; */
+}
+
+#gender {
+    width: 280px;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#gender p {
+    font-size: 13px;
+    margin-top: 16px;
+    letter-spacing: 1px;
+}
+
+#nav2-right {
+    /* border: 1px solid black; */
+    width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#semi-nav2-left {
+    /* border: 1px solid black; */
+    height: 38px;
+    width: 260px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search {
+    margin-left: 10px;
+    margin-top: 11px;
+    color: grey;
+}
+#search2{
+    display: none;
+}
+#input input {
+    height: 20px;
+    width: 210px;
+    margin: 10px;
+    margin-right: 15px;
+    padding-left: 5px;
+    font-size: 10px;
+    border: none;
+    outline: navajowhite;
+    background-color: #EEEEEE;
+    letter-spacing: 0.5px;
+
+}
+
+#semi-nav2-right {
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login {
+    height: 20px;
+    width: 50px;
+    border-left: 1px solid grey;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+#whistlist {
+    /* border: 1px solid red; */
+    margin-top: 15px;
+}
+
+#bag {
+    /* border: 1px solid red; */
+    margin-top: 15px;
+}
+
+#india {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+#head1 {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#head1 p {
+    white-space: pre-wrap;
+    font-size: 14px;
+    color: rgb(75, 75, 75);
+}
+#head3{
+    display: none;
+}
+#head2 {
+    /* border: 1px solid red; */
+    width: 91%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+#main{
+    width: 90%;
+    height: 3550px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+}
+
+#left {
+    /* border: 1px solid green; */
+    height: 650px;
+    overflow-y: visible;
+    width: 24%;
+    position: sticky;
+    top: 95px;
+}
+
+#filter {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+#left>div {
+    height: 47px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+#left>div p {
+    align-self: center;
+}
+
+#left>div i {
+    align-self: center;
+}
+
+#right {
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 73%;
+}
+
+#sortby {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: end;
+    margin-inline-end: 10px;
+}
+
+#sortby>span {
+    margin-right: 10px;
+}
+
+.Sort {
+    color: gray;
+}
+
+.popular {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+#Images {
+    width: 100%;
+    height: 99%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Images>div {
+    width: 32%;
+    height: 480px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+
+.backphoto {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 75%;
+    background-image: url(https://images.bewakoof.com/t640/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg);
+    background-size: cover;
+}
+
+.Transparent {
+    /* border: 1px solid black; */
+    font-size: 8px;
+    width: 80px;
+    padding: 4px 0px 4px 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+}
+.Pricing {
+    height: 24%;
+    width: 100%;
+    /* border: 1px solid green; */
+    background-color: white;
+}
+.P-UP {
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.P-left {
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 85%;
+}
+
+.bewakoof {
+    color: rgb(89, 89, 89);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    font-weight: 600;
+    /* border: 1px solid red; */
+}
+.title {
+    font-size: 10px;
+    margin-top: 5px;
+    color: grey;
+    font-family: sans-serif;
+    /* border: 1px solid green; */
+    margin-top: 5px;
+}
+.P-logo{
+    /* border: 1px solid green; */
+    height: 22px;
+    width: 12%;
+    margin-top: 5px;
+}
+.P-DOWN {
+    /* border: 1px solid red; */
+    width: 70%;
+    margin-top: 3px;
+    height: 20%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.Price {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.discount {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.7px;
+    font-size: 14px;
+    color: grey;
+    margin-left:5px;
+    font-weight: 100;
+    /* margin-top: 3px; */
+}
+.TribeMember{
+    height: 16px;
+    font-size: 11px;
+    /* border: 1px solid green; */
+    width: fit-content;
+    background-color: #F7F7F7;
+    color: #2E2E2E;
+}
+.TribeMember p{
+    padding: 1px 10px;
+} 
+.cotton{
+    height: 16px;
+    font-size: 11px;
+    border: 1px solid grey;
+    width: fit-content;
+    color: #2E2E2E;
+    margin-top: 10px;
+}
+.cotton p{
+    padding: 1px 7px;
+    color: grey;
+} 
+#footer {
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: #181818;
+    margin-top: 15px;
+    padding-top: 90px;
+}
+
+#Semi-footer {
+    height: 80%;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid blue; */
+    background-color: #181818;
+}
+
+.CYellow {
+    color: #FDD835;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+#Footer-content {
+    height: 90%;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#Footer-content>div {
+    width: 20%;
+    /* border: 1px solid white; */
+}
+
+#Footer-content>div:nth-child(4) {
+    width: 23%;
+    margin-right: 20px;
+}
+
+.header {
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+#Footer-content h4 {
+    color: #FDD835;
+    font-size: 12PX;
+    letter-spacing: 1px;
+}
+
+.mid {
+    height: 40%;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+#semi-mid2 {
+    /* border: 1px solid red; */
+    height: 30px;
+    margin-top: 20px;
+    width: 55%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Footer-content p {
+    color: white;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 1px;
+}
+
+.end {
+    /* border: 1px solid white; */
+    height: 30%;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.EndImg {
+    /* border: 1px solid green; */
+    height: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PaymentModes {
+    /* border: 1px solid green; */
+    height: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (min-width:770px) and (max-width : 990px){
+    #Screen{
+        height: 4500px;
+    }
+    #main{
+        width: 100%;
+    }
+    #nav1 {
+        display: none;
+    }
+
+    #gender {
+        display: none;
+    }
+
+    #semi-nav2-left {
+        display: none;
+    }
+
+    #nav2-right {
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        width: 110px;
+    }
+
+    #search2 {
+        display: block;
+        margin-top: 15px;
+        color: #181818;
+        margin-right: 15px;
+    }
+
+    #whistlist {
+        margin-right: 15px;
+    }
+
+    #login {
+        display: none;
+    }
+
+    #Logo {
+        display: none;
+    }
+
+    #Logo2 {
+        display: block;
+        height: 20px;
+        align-self: center;
+        margin-bottom: 20px;
+        width: 50px;
+    }
+    #india{
+        display: none;
+    }
+    #footer{
+        height: 600px;   
+    }
+    #Semi-footer{
+        height: 600px;
+        width: 100%;
+    }
+    #Footer-content{
+        width: 100%;
+    }
+    #Footer-content>div{
+        width: 49.5%;
+        height: 250px;
+    }
+    .PaymentModes{
+        width: 50%;
+    }
+    .EndImg{
+        width: 50%;
+    }
+    #Footer-content>div:nth-child(4){
+        width: 47%;
+    }
+}
+
+
+@media screen and (max-width:770px) {
+    #Screen{
+        height: 6500px
+    }
+    #main{
+        height: 5800px
+    }
+    #nav1 {
+        display: none;
+    }
+
+    #gender {
+        display: none;
+    }
+
+    #semi-nav2-left {
+        display: none;
+    }
+
+    #nav2-right {
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        width: 110px;
+    }
+
+    #search2 {
+        display: block;
+        margin-top: 15px;
+        color: #181818;
+        margin-right: 15px;
+    }
+
+    #whistlist {
+        margin-right: 15px;
+    }
+
+    #login {
+        display: none;
+    }
+
+    #Logo {
+        display: none;
+    }
+
+    #Logo2 {
+        display: block;
+        height: 20px;
+        align-self: center;
+        margin-bottom: 20px;
+        width: 50px;
+    }
+    #india{
+        display: none;
+    }
+    #left{
+        display: none;
+    }
+    #right{
+        width: 100%;
+    }
+    #Images >div{
+        width: 49%;
+    }
+    #head2{
+        display: none;
+    }
+    #head1{
+        display: none;
+    }
+    #head3{
+        display: block;
+        margin-top:40px ;
+        margin-bottom:20px ;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+     #footer{
+        height: 400px;
+    }
+    #Semi-footer{
+        height: 400px;
+    }
+    #Footer-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .end{
+        display: none;
+    }
+    #semi-mid{
+        display: none;
+    }
+    #Footer-content>div{
+        width: 100%;
+    }
+    #Footer-content>div:nth-child(4){
+        display: none;
+    }
+    #Footer-content>div:nth-child(2)>div:nth-child(3){
+        display: block;
+    }
+    .EndImg{
+        display: none;
+    }
+    .Transparent{
+        display: none;
+    }
+
+}
