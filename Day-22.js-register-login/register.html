@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <form onsubmit="register(event)">
+        <label for="name">name</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">email</label><br>
+        <input type="email" id="email"><br>
+        <label for="password">password</label><br>
+        <input type="password" id="password"><br>
+        <label for="confpass">confirm password</label><br>
+        <input type="password" id="confpass"><br>
+        <input type="submit" value="register">
+    </form>
+   
+    <button onclick="getusers(event)">Getuser</button>
+    <button onclick="delusers(event)">Delete user</button>
+
+
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+            var userName = document.getElementById("name").value;
+            var userEmail = document.getElementById("email").value;
+            var userPass = document.getElementById("password").value;
+            var userconfpass = document.getElementById("confpass").value;
+
+            if (userName && userEmail && userPass && userconfpass) {
+                if (userPass === userconfpass) {
+
+                    var userObject = { name: userName, email: userEmail, password: userPass, confirmpass: userconfpass }
+
+                    var arr = JSON.parse(localStorage.getItem("users")) || [];
+                    
+                    for(var i = 0 ; i < arr.length ; i++){
+                        if(arr[i].email === userEmail){
+                            return alert("email already used");
+                        }
+                    }
+                    
+                    arr.push(userObject);
+
+                    localStorage.setItem("users", JSON.stringify(arr));
+
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                    document.getElementById("confpass").value = "";
+
+                    alert("Register Succees..")
+                }
+                else {
+                    alert("password and confirm password not matched")
+                }
+            }
+            else {
+                alert("all fields are mandatory");
+            }
+        }
+        function getusers(event) {
+            event.preventDefault();
+            var users1 = JSON.parse(localStorage.getItem("users"));
+            console.log(users1)
+        }
+        
+        function delusers(event){
+            event.preventDefault();
+            localStorage.removeItem('users')
+        }
+    </script>
+</body>
+
+</html>

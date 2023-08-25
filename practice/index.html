@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <fieldset style="text-align: center; font-size: larger; background-color: bisque; max-width: 80%; margin: auto; ;">
+        <legend style="font-size: 30px; color: blue; text-decoration-line: underline;">register form</legend>
+        <form onsubmit="register(event)">
+            <label>Name</label><br>
+            <input type="text" id="name" placeholder="Enter your Name" required /><br>
+            <label>Password</label><br>
+            <input type="password" id="password" placeholder="Enter your password" required /><br>
+            <label>Confirm Password</label><br>
+            <input type="password" id="ConfPass" placeholder="Enter again " required /><br><br>
+            <input type="submit" value="Register" />
+        </form><br>
+        <button onclick="Getuser(event)">Get User</button>
+        <button onclick="DelData(event)">Delete Data</button>
+    </fieldset>
+
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+            var UserName = document.getElementById("name").value;
+            var UserPassword = document.getElementById("password").value;
+            var UserConfPass = document.getElementById("ConfPass").value;
+
+            if (UserPassword === UserConfPass) {
+                var obj = { Name: UserName, password: UserPassword }
+
+                var arr = JSON.parse(localStorage.getItem("users")) || []
+
+                for (var i = 0; i < arr.length; i++) {
+                    if (arr[i].Name === UserName) { 
+                        return alert("Name already used");
+                    }
+                }
+                arr.push(obj);
+
+                localStorage.setItem("users", JSON.stringify(arr));
+
+                event.preventDefault();
+                document.getElementById("name").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("ConfPass").value = "";
+
+                alert("register Successfull")
+            }
+            else {
+                alert("Password doesn't Match");
+            }
+        }
+        function Getuser(event) {
+            event.preventDefault();
+            var UsersData = JSON.parse(localStorage.getItem("users"));
+            console.log(UsersData);
+        }
+        function DelData(event) {
+            event.preventDefault();
+            localStorage.removeItem("users");
+        }
+    </script>
+</body>
+
+</html>

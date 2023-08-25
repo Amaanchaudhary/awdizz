@@ -41,7 +41,7 @@
     //     console.log(fac)
 
 //Q. Write a program to print an increment star of 4 line 
-    // 1st way:-
+    // 1st way:- wrong
     // var str = "";
     // for(var i = 0; i < 4 ; i++){
     //     for(var j = 0; j <= i ; j++){
@@ -57,18 +57,18 @@
     // console.log(str);
 
     // 2nd way:-
-    // for(var i=1; i<=4; i++){
+    // for(var i = 1; i <= 4; i++){
     //     console.log("* ".repeat(i));
     //  }
 
     //Q.From an array find out the addition of every possible 2 numbers which match the target 
-    var arr= [12,2, 4, 5,6 ,7 ,7, 0 ,2 ,10,8 , 4];
-    var target = 12;
+    // var arr= [12,2, 4, 5,6 ,7 ,7, 0 ,2 ,10,8 , 4];
+    // var target = 12;
 
-    for(var i = 0; i < arr.length; i++){
-        for(var j = i+1 ; j < arr.length; j++){
-            if(arr[i] + arr[j] == target){
-                console.log(arr[i],"+",arr[j],"=" ,arr[i]+ arr[j]);
-            }
-        }
-    }
+    // for(var i = 0; i < arr.length; i++){
+    //     for(var j = i+1 ; j < arr.length; j++){
+    //         if(arr[i] + arr[j] == target){
+    //             console.log(arr[i],"+",arr[j],"=" ,arr[i]+ arr[j]);
+    //         }
+    //     }
+    // }

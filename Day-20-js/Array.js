@@ -8,6 +8,7 @@ console.log(a);  //Re-Declared
 
 Re-declare and Re-assign both are possible in VAR 
 */
+
 /*
 let b = "Hi";
 console.log(a); //declare

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+
+<body>
+    <form onsubmit="getuser(event)">
+        <label for="name1">name</label><br>
+        <input type="text" id="name1"><br>
+        <label for="pass">password</label><br>
+        <input type="password" id="pass"><br>
+        <input type="submit" value="login">
+    </form>
+
+    <script>
+        function getuser(event) {
+            event.preventDefault();
+            var UserName1 = document.getElementById("name1").value
+            var UserPassword1 = document.getElementById("pass").value
+            var users1 = JSON.parse(localStorage.getItem("users"));
+            // console.log(JSON.parse(localStorage.getItem("users"))[1].name);
+            // console.log(JSON.parse(localStorage.getItem("users")).length);
+
+            var result = false;
+            for (var i = 0; i <= users1.length - 1 ; i++) {
+                
+                if (users1[i].name === UserName1 && users1[i].password === UserPassword1) {
+                    result = true;
+                }
+            }
+            if(result == true){
+                alert("Successfull login")
+            }
+            else{
+                alert("Invalid user");
+            }
+            document.getElementById("name1").value = "";
+            document.getElementById("pass").value = "";
+
+        }
+    </script>
+</body>
+
+</html>

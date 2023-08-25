@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <fieldset style="text-align: center; font-size: larger; background-color: bisque; max-width: 80%; margin: auto; ;">
+        <legend style="font-size: 30px; color: blue; text-decoration-line: underline;">Login form</legend>
+        <form onsubmit="login(event)">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your Name" required autocomplete="off" /><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Enter your password" required autocomplete="off" /><br>
+            <input type="submit" value="Login" />
+        </form>
+    </fieldset>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            var UserName = document.getElementById("name").value;
+            var UserPassword = document.getElementById("password").value;
+
+            usersData = JSON.parse(localStorage.getItem("users"));
+
+            var result = false;
+
+            for (var i = 0; i < usersData.length; i++) {
+                if (UserName === usersData[i].Name && UserPassword === usersData[i].password) {
+                    result = true;
+                }
+            }
+            if (result == true) {
+                alert("Login Successfull");
+                document.getElementById("name").value = "";
+                document.getElementById("password").value = "";
+            }
+            else {
+                alert("incalid")
+            }
+
+        }
+    </script>
+</body>
+
+</html>
