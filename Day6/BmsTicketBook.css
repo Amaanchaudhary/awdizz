@@ -295,33 +295,51 @@
 }
 
 .right {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 60%;
     height: fit-content;
 }
 .Showtiming{
-    /* border: 1px solid green; */
+    border: 1px solid green;
     width: 100%;
     height: fit-content;
-    line-height: 45px;
+    /* line-height: 45px; */
+    display: flex;
+    flex-wrap : nowrap;
     margin-top: 20px;
-    /* padding: 12px 0px; */
-    margin-bottom: 20px;
+    padding: 12px 0px;
+    margin-bottom: 5px;
 }
 .timeOrange{
-    border: 1px solid green;
-    font-weight: 500;
+    border: 1px solid grey;;
+    width: 110px;
+    height: 40px;  
+    line-height: 12px;
+    text-align: center;
     color: #FF6600 ;
-    font-size: 12px;
-    padding: 12px 30px;
-    margin-left: 8px;
+    margin-left: 15px;
+    display: table;
     border-radius: 3px;
 }
+.timeOrange > p {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 12px;
+    /* padding-top: 8px; */
+}
+.timeOrange > p > span{
+    font-size: 10px;
+}
+
 .timeGreen{
     border: 1px solid grey;
     font-weight: 500;
     color: #4ABD5D ;
+    height: fit-content;
+    width: fit-content;
     font-size: 12px;
+    text-align: center;
     padding: 12px 30px;
     margin-left: 8px;
     border-radius: 3px;

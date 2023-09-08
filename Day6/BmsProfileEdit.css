@@ -1,0 +1,332 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#Screen{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 1640px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#nav3{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: #3B4261;
+}
+.Nav3Content{
+    color: white;
+    align-self: center;
+    font-size: 15px;
+    padding: 10px;
+}
+#body{
+    width: 100%;
+    height: 1240px;
+    background-color: #F2F5F9;
+    /* border: 1px solid red; */
+}
+#main{
+    width: 56%;
+    margin: auto;
+    border-radius: 5px;
+    height: 320px;
+    background-color: white;
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    box-shadow: 1px 2px 1px white;
+}
+#head{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 96px;
+    border-radius: 4px 4px 0px 0px;
+    background: 
+    linear-gradient(98.18deg, rgb(43, 49, 72) 2.87%, rgb(136, 63, 85) 59.96%, rgb(235, 78, 98) 98.36%);
+}
+#Semi-head{
+    height: 90px;
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid black; */
+}
+#circle{
+    border: 1px solid grey;
+    border-width: 2px;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+}
+#circle > i{
+    margin-top: 35px;
+    color: grey;
+}
+#circle > p{
+    font-size: 11px;
+    margin-top: 5px;
+    color: grey;
+}
+#HI-guest{
+    /* border: 1px solid green; */
+    height: 30px;
+    font-size: 11px;
+    margin-left: 10px;
+    align-self: center;
+    color: white;
+}
+.details{
+    /* border: 1px solid green; */
+    width: 82%;
+    padding-bottom: 17px;
+    padding-top: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto;
+}
+.Email-add{
+    /* border: 1px solid green; */
+    width: 82%;
+    display: flex;
+    margin: auto;
+}
+.Email-add > span{
+    font-size: 14px;
+    font-weight: 400;
+}
+.Email-add > p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 50px;
+    padding-right: 7px;
+}
+.verified{
+    font-size: 11px;
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    padding: 0px 3px;
+    background-color: #C9F8D3;
+    color: #007D91;
+    font-weight: 500;
+    height: fit-content;
+}
+.edit{
+    /* border: 1px solid black; */
+    padding-left: 103px;
+    color: rgba(255, 0, 0, 0.631);
+}
+.edit > span{
+    font-size: 15px;
+    font-weight: 400;
+}
+#mob{
+    /* border: 1px solid red; */
+    padding-top: 40px;
+    width: 82%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#mob > p{
+    font-size: 14px;
+    font-weight: 400;
+}
+#mob > div{
+    width: 75%;
+    background-color: #FFE49B;
+    border-radius: 3px;
+    /* border: 1px solid red; */
+}
+#mob > div > P{
+    padding: 10px 10px 0px 10px;
+    line-height: 12px;
+    color: maroon;
+}
+#mob > div > span{
+    padding: 5px 10px;
+    letter-spacing: 0.5px;
+    color: rgb(53, 53, 53);
+    font-size: 12px;
+}
+
+#body2{
+    width: 56%;
+    margin: auto;
+    border-radius: 5px;
+    height: 370px;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 15px;
+    box-shadow: 1px 2px 1px white;
+}
+#semi-body2{
+    /* border: 1px solid black; */
+    height: 88%;
+    width: 82%;
+    margin: auto;
+    display: flex;
+}
+#body2 > h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 9%;
+}
+
+#left{
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 100%;
+    margin-right: 10px;
+}
+#left > label{
+    font-size: 15px;
+}
+#right{
+    /* border: 1px solid red; */
+    width: 75%;
+    height: 100%;
+}
+#right > input{
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 10px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    border: 1px solid grey;
+    /* color: rgba(128, 128, 128, 0); */
+    outline: none;
+}
+#right > div > button{
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    margin-bottom: 27px;
+    background-color: white;
+}
+
+#body3{
+    width: 56%;
+    margin: auto;
+    border-radius: 5px;
+    height: 440px;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 15px;
+    box-shadow: 1px 2px 1px white;
+}
+#semi-body3{
+    /* border: 1px solid black; */
+    height: 88%;
+    width: 82%;
+    margin: auto;
+    display: flex;
+}
+#body3 > h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 9%;
+}
+
+#left2{
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 100%;
+    margin-right: 10px;
+}
+#left2 > label{
+    font-size: 15px;
+}
+#right2{
+    /* border: 1px solid red; */
+    width: 75%;
+    height: 100%;
+}
+#right2 > input{
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 10px;
+    border-radius: 7px;
+    color: rgba(128, 128, 128, 0);
+    margin-bottom: 25px;
+    border: 1px solid grey;
+    outline: none;
+}
+#right2 > div > button{
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    margin-bottom: 27px;
+    background-color: white;
+}
+#TC{
+    text-align: center;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.656);
+    margin-top: 25px;
+}
+#button{
+    text-align: center;
+    /* border: 1px solid black; */
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px;
+    position: sticky;
+    bottom: 0%;
+    background-color: white;
+}
+#button > button{
+    padding: 10px 130px;
+    color: white;
+    background-color: #999999 ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#last{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    /* border: 1px solid red; */
+}
+#last > p{
+    padding: 10px  20px;
+    color: grey;
+}
+#footer{
+    height: 120px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #F2F2F2;
+}
+#footer > h4{
+    color: grey;
+    padding: 10px 10px;
+}
+#footer > p{
+    font-size: 12.5px;
+    color: grey;
+    padding: 5px 10px;
+}
+.red{
+    color: rgb(211, 31, 31)
+}
