@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://kit.fontawesome.com/85d06e0fd8.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: Roboto, sans-serif;
+        }
+
+        #screen {
+            border: 1px solid black;
+            height: 540px;
+            width: 100%;
+            background-image: url(./Screenshot\ \(12\).png);
+            background-size: cover;
+        }
+
+        #main {
+            width: 34%;
+            margin: auto;
+            height: 98%;
+            margin-top: 5px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        #header {
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 30px;
+            margin-top: 20px;
+            display: flex;
+            text-align: center;
+
+        }
+
+        #header>div:nth-child(1) {
+            width: 83%;
+            height: 100%;
+            /* border: 1px solid green; */
+            font-weight: 600;
+            font-size: 15px;
+            color: #333333;
+            padding-top: 5px;
+            margin-left: 20px;
+        }
+
+        #header>div:nth-child(2) {
+            color: #666666;
+        }
+
+        #body {
+            width: 78%;
+            margin: auto;
+            /* border: 1px solid green; */
+            height: 400px;
+            margin-top: 35px;
+        }
+
+        .box {
+            border: 1px solid grey;
+            height: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            color: grey;
+            /* justify-content: space-around; */
+        }
+
+        .box:hover {
+            background-color: #F2F2F2;
+        }
+
+        .image {
+            /* border: 1px solid black; */
+            width: 10%;
+            height: 60%;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .text {
+            /* border: 1px solid black; */
+            width: 60%;
+            height: 60%;
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .or {
+            text-align: center;
+            color: grey;
+            font-size: 14px;
+        }
+
+        .authentication {
+            /* border: 1px solid black; */
+            height: 20px;
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+        }
+
+        .authentication>div:nth-child(2) {
+            margin-left: 5px;
+            /* border: 1px solid red; */
+        }
+
+        .authentication>div:nth-child(2)>label {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .authentication>div:nth-child(2)>input {
+            width: 200px;
+            padding-left: 10px;
+            /* letter-spacing: 1px; */
+            border: none;
+            outline: none;
+            border-bottom: 1px solid grey;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        #footer {
+            margin-top: 10px;
+            font-size: 12px;
+            color: grey;
+            margin-top: 78px;
+            text-align: center;
+            /* letter-spacing: 1px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="main">
+            <div id="header">
+                <div>
+                    <span>Get Started</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-xmark fa-xl"></i>
+                </div>
+            </div>
+            <div id="body">
+                <div class="box">
+                    <div class="image">
+                        <img src="https://in.bmscdn.com/webin/common/icons/googlelogo.svg" />
+                    </div>
+                    <div class="text">
+                        <span>Continue with google</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="https://in.bmscdn.com/webin/common/icons/email.svg" />
+                    </div>
+                    <div class="text">
+                        <span>Continue with Email</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <i style="color: black;" class="fa-brands fa-apple fa-lg"></i>
+                    </div>
+                    <div class="text">
+                        <span>Continue with Apple</span>
+                    </div>
+                </div>
+                <p class="or">OR</p>
+                <div class="authentication">
+                    <div>
+                        <img src="https://in.bmscdn.com/webin/common/icons/indianflag.svg" />
+                    </div>
+                    <div>
+                        <label>EMAIL : </label>
+                        <input style="margin-left: 20px;" type="email" placeholder="Enter your registered email"
+                            required />
+                    </div>
+                </div>
+                <div class="authentication" style="margin-top: 10px;">
+                    <div>
+                        <!-- <img src="https://in.bmscdn.com/webin/common/icons/indianflag.svg"/> -->
+                    </div>
+                    <div style="margin-left: 0px;">
+                        <label>PASSWORD : </label>
+                        <input type="password" placeholder="Enter your Password" required />
+                    </div>
+                </div>
+                <div class="authentication" style="margin-top: 10px;">
+                    <div>
+                        <!-- <img src="https://in.bmscdn.com/webin/common/icons/indianflag.svg"/> -->
+                    </div>
+                    <div style="margin-left: 0px;">
+                        <label>PASSWORD : </label>
+                        <input type="password" placeholder="Re-Enter your Password" required />
+                    </div>
+                </div>
+                <p id="footer">I agree to the <u>Terms & Conditions</u> & <u>Privacy Policy</u></p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

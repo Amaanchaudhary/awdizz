@@ -3,9 +3,11 @@
 const arr = ["Amaan" , "Hi" , "Hello" ,"Bye"]
 
 function arraylength(arr){
-    return arr.length;
+    for(var i = 0; i < arr.length ; i++){
+        console.log(arr[i].length);   
+    }
 }
-console.log(arraylength(arr)); //function called
+arraylength(arr); //function called
 */
 
 //Q.2

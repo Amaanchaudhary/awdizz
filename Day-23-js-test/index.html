@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product form</title>
+    <style>
+        fieldset {
+            margin: auto;
+            width: 70%;
+            font-size: 24px;
+            text-align: center;
+            text-decoration-line: underline;
+            background-color: bisque;
+        }
+
+        legend {
+            color: blue;
+            font-size: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    <fieldset style="margin: auto;width: 70%; font-size: 24px;  text-align: center; text-decoration-line: underline; background-color: bisque; ">
-        <legend style="color: blue; font-size: 40px;">Product form</legend>
+    <fieldset>
+        <legend>Product form</legend>
 
-    <form onsubmit="add(event)">
-        <label for="name">Name</label><br>
-        <input type="input" id="name" placeholder="Enter your Name" autocomplete="off" required/><br><br>
+        <form onsubmit="add(event)">
+            <label for="name">Name</label><br>
+            <input type="input" id="name" placeholder="Enter your Name" autocomplete="off" required /><br><br>
 
-        <label for="price">price</label><br>
-        <input type="number" id="price"  placeholder="Enter Price" required/><br><br>
+            <label for="price">price</label><br>
+            <input type="number" id="price" placeholder="Enter Price" required /><br><br>
 
-        <label for="image">product Image</label><br>
-        <input type="image"  id="image"/><br><br>
+            <label for="image">product Image </label><br>
+            <input type="file" id="image" /><br><br>
 
-        <label for="category">Type product Category</label><br>
-        <input type="input"  id="category" placeholder="Eg - Shoes,jeans etc" required/><br><br>
+            <label>Type product Category</label><br>
+            <!-- <input type="input" id="category" placeholder="Eg - Shoes,jeans etc" required /><br><br> -->
+            <input type="radio" name="a" value="track" />track<br>
+            <input type="radio" name="a" value="jeans" />jeans<br>
+            <input type="radio" name="a" value="Tshirt" />T-Shirt<br><br>
 
-        <input style="font-size: 30px;" type="submit" value="Add"/>
-    </form><br>
-    <button style="font-size: 20px;" onclick="deldata(event)">Del data</button>
-</fieldset>
+            <input style="font-size: 30px;" type="submit" value="Add" />
+        </form><br>
+        <button style="font-size: 20px;" onclick="deldata(event)">Del data</button>
+    </fieldset>
 
-<script>
-    function add(event){
-        event.preventDefault();
-        var Username = document.getElementById("name").value;
-        var Userprice = document.getElementById("price").value;
-        var Userimage = document.getElementById("image").value;
-        var Usercat = document.getElementById("category").value;
+    <script>
+        function add(event) {
+            event.preventDefault();
+            var Username = document.getElementById("name").value;
+            var Userprice = document.getElementById("price").value;
+            var Userimage = document.getElementById("image").value;
+            var Usercat = document.getElementsByName("a");
+            var value;
+            for (var i = 0; i < Usercat.length; i++) {
+                if (Usercat[i].checked) {
+                    value = Usercat[i].value;
+                    break; 
+                }
+            }
 
-        console.log(Username,Userprice,Userimage,Usercat)
+            // console.log(Username, Userprice, Userimage, Usercat)
 
-        var obj = {Name: Username,  price : Userprice , category: Usercat}
+            var obj = { Name: Username, price: Userprice, ImageUrl: Userimage, category: value  }
 
-        var arr = JSON.parse(localStorage.getItem("product")) || []
+            var arr = JSON.parse(localStorage.getItem("product")) || []
 
-        arr.push(obj);
+            arr.push(obj);
 
-        localStorage.setItem("product" , JSON.stringify(arr));
-        document.getElementById("name").value = "";
-        document.getElementById("price").value = "";
-        document.getElementById("image").value = "";
-        document.getElementById("category").value = "";
-    }
+            localStorage.setItem("product", JSON.stringify(arr));
+            document.getElementById("name").value = "";
+            document.getElementById("price").value = "";
+            document.getElementById("image").value = "";
+            document.getElementsByName("a").value = "";
+        }
 
-    function deldata(event){
-        event.preventDefault();
-        localStorage.removeItem("product")
-    }
-</script>
+        function deldata(event) {
+            event.preventDefault();
+            localStorage.removeItem("product")
+        }
+    </script>
 </body>
+
 </html>
