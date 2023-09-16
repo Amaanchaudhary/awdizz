@@ -1,5 +1,5 @@
 //Q.1 
-/*
+
 const arr = ["Amaan" , "Hi" , "Hello" ,"Bye"]
 
 function arraylength(arr){
@@ -8,7 +8,7 @@ function arraylength(arr){
     }
 }
 arraylength(arr); //function called
-*/
+
 
 //Q.2
 /*

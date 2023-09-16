@@ -1,0 +1,470 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#screen {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 1300px;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+
+#navbar {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #21222d;
+    height: 70px;
+    padding-left: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: sticky;
+    top: 0%;
+}
+
+#navbar>h2 {
+    color: white;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+#navbar > p {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(217, 217, 217, 0.531)
+}
+
+.UA {
+    border: 1px solid white;
+    border-width: 1.5px;
+    padding: 3px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 8px;
+}
+
+#body {
+    height: 89%;
+    margin-top: 10px;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+}
+
+#left {
+    width: 68.5%;
+    /* border: 1px solid red; */
+    background-color: white;
+    height: 100%;
+}
+
+#leftHead {
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+#leftHead>img {
+    width: 100%;
+    height: 100%;
+}
+
+#GrabABite {
+    /* border: 1px solid green; */
+    height: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+#GrabABite>h1 {
+    font-weight: 500;
+    font-size: 27px;
+    letter-spacing: 3px;
+    padding-top: 5px;
+}
+
+#GrabABite>p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: grey;
+}
+
+#GrabABite>div {
+    /* border: 1px solid black; */
+    margin-top: 12px;
+}
+
+.buttons {
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 1px 15px 2px 15px;
+    font-size: 10px;
+    border: 1px solid grey;
+    color: rgb(67, 67, 67);
+    outline: none;
+    background-color: white;
+}
+
+#leftContent {
+    /* border: 1px solid red; */
+    margin-top: 8px;
+    height: 78%;
+    width: 100%;
+}
+
+#scroll {
+    /* border: 2px solid blue;   */
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 84%;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.food {
+    /* border: 1px solid green; */
+    height: 150px;
+    width: 48%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, .25);
+}
+
+.foodLeft {
+    /* border: 1px solid red; */
+    width: 27%;
+    height: 100%;
+}
+
+.GreenDot {
+    border: 1px solid #34a146;
+    ;
+    width: fit-content;
+    height: fit-content;
+    padding: 2px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.dot {
+    /* border: 1px solid green; */
+    width: 6px;
+    height: 6px;
+    background-color: #34a146;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.FoodImg {
+    /* border: 1px solid black; */
+    height: 50%;
+    width: 80%;
+    margin: auto;
+
+}
+
+.FoodImg>img {
+    width: 100%;
+    /* padding-left: 15px; */
+    height: 100%;
+}
+
+.foodRight {
+    /* border: 1px solid red; */
+    width: 73%;
+    height: 100%;
+}
+
+.foodRight>h4 {
+    font-size: 14px;
+    color: rgb(42, 42, 42);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.foodRight>p {
+    font-size: 11px;
+    color: grey;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.foodRight>div {
+    /* border: 1px solid grey; */
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foodRight>div>span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.foodRight>div>button {
+    font-size: 14px;
+    padding: 3px 15px 4px 15px;
+    margin-right: 18px;
+    border-radius: 7px;
+    outline: none;
+    color: #DD3D52;
+    background-color: white;
+    border: 1px solid #DD3D52;
+}
+
+#footer {
+    /* border: 1px solid black; */
+    height: 120px;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.paragraph {
+    font-size: 11px;
+    color: grey;
+    margin-top: 20px;
+    white-space: prewrap;
+}
+
+#right {
+    width: 30%;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    height: 40%;
+}
+
+#rightTop {
+    border: 1px solid white;
+    height: 88%;
+    width: 89%;
+    margin: auto;
+}
+
+.HEAD {
+    margin-top: 25px;
+    color: brown;
+    font-weight: 200;
+    letter-spacing: 2.5px;
+    font-size: 16px;
+}
+
+.premium {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.premium>p {
+    font-size: 13px;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.premium>p>span {
+    color: grey;
+    margin-left: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.premium>h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.convFees {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.425);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.convFees > p {
+    font-size: 13px;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.convFees > h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+.subtotal{
+    /* border: 1px solid black; */
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.subtotal > p {
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.subtotal>h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+#contribute{
+    /* border: 1px solid green; */
+    display: flex;
+    margin-top: 30px;
+    height: 110px;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+#contribute > div:nth-child(1){
+    /* border: 1px solid black; */
+    width: 13%;
+    height: 20%;
+    margin-top: 20px;
+}
+#contribute > div:nth-child(2){
+    /* border: 1px solid black; */
+    width: 65%;
+    margin-top: 20px;
+    height: 85%;
+}
+#contribute > div:nth-child(2) > h4{
+    font-size: 16px;
+    color: black;
+    font-weight:500;
+}
+#contribute > div:nth-child(2) > p{
+    font-size: 12px;
+    margin-top: 10px;
+    color: black;
+    font-weight:300;
+    /* margin-bottom: 10px; */
+}
+#contribute > div:nth-child(2) > span{
+    font-size: 11px;
+    border-bottom: 1px dashed grey;
+    color: grey;
+    font-weight:500;
+}
+#contribute > div:nth-child(3){
+    /* border: 1px solid black; */
+    width: 15%;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 85%;
+}
+#contribute > div:nth-child(3) > h5{
+    font-size: 16px;
+    color: black;
+    text-align: right;
+    font-weight:400;
+}
+#contribute > div:nth-child(3) > p{
+    font-size: 16px;
+    color:  #DD3D52;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+}
+.state{
+    font-size: 12.5px;
+    margin-top: 10px;
+}
+#payable{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFCDC;
+}
+#payable >  h1 , p{
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-self: center;
+}
+.ticketType{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: grey;
+    margin-top: 30px;
+}
+.box2{
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.box2 > div{
+    border: 1px solid grey;
+    background-color: white;
+    height: 100%;
+    width: 47%;
+    display: flex;
+}
+.box2 > div > div:nth-child(1){
+    border-right: 1px solid grey;
+    height: 100%;
+    width: 25%;
+}
+.box2 > div > div:nth-child(2){
+    /* border: 1px solid black; */
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 15px;
+    color: #DD3D52;
+    width: 75%;
+}
+.dot2 {
+    /* border: 1px solid green; */
+    width: 15px;
+    height: 15px;
+    background-color: #DD3D52;
+    margin-top: 17px;
+    margin-left: 14px;
+    border-radius: 50%;
+    align-self: center;
+}
+.last{
+    font-size: 11px;
+    padding-top: 20px;
+}
+.last2{
+    font-size: 12px;
+    padding-top: 20px;
+}
+.lastbut{
+   width: 100%;
+   height: 40px;
+   margin-top: 5px;
+   border-radius: 6px;
+   border: 1px solid  #DD3D52;
+   outline: none;
+   background-color: #DC354B;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+}
+.lastbut > p{
+    font-size: 16px;
+} 
+
