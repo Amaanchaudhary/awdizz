@@ -35,9 +35,13 @@ console.log(length1(arr))
     var arr = [11 , 40, 15, 77 ,7 , 10]
 
     function SmallestNum(arr){
-        var Small = arr[i]
+        var Small = arr[0]
         for(var i = 1 ; i < arr.length; i++){
             Small = Small > arr[i]? arr[i] : Small; 
+
+            // if(Small > arr[i]){
+            //         Small = arr[i]
+            //     }
         } 
         return Small;
     }
@@ -198,13 +202,13 @@ console.log(GreatestNum(arr));
 // Example:
 // Input: "racecar"
 // Output: true
-
+/*
 var str = "racecar"
 
 function palindrome(str) {
     var isTrue = true;
     for(var i = 0 ; i < (str.length/2) ; i++){
-        if(str[i]  !==  str[(str.length) - i - 1]){
+        if(str[i]  !==  str[str.length - 1 - i]){
             isTrue = false
         }
     }
@@ -218,4 +222,4 @@ function palindrome(str) {
 }
 
 console.log(palindrome(str));
-
+*/
