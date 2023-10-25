@@ -111,3 +111,58 @@ switch (fruit){
 // var obj = {name: "amaan" , age : 12, days : {holiday: "sunday" , weekdays : ["mon" , "tues" , "wed" , {halfday: "friday"} ]} }
 // console.log(obj.days.weekdays[3].halfday)
 
+/*
+//Q. Remove duplicate from sorted array
+// Input: nums = [0,0,1,1,1,2,2,3,3,4]
+// Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+
+    var nums = [0,0,1,1,1,2,2,3,3,4]
+
+    for(var i = 0 ; i < nums.length-1 ; i++){
+        if(nums[i] == nums[i+1]){
+            console.log(nums, "in iteration" , i);
+            nums.splice(i , 1 )
+            i--;
+        }
+    }
+*/
+
+// Example 1:
+// Input: nums = [1,3,5,6], target = 5
+// Output: 2
+
+// Example 2:
+// Input: nums = [1,3,5,6], target = 2
+// Output: 1
+
+// Example 3:
+// Input: nums = [1,3,5,6], target = 7
+// Output: 4
+
+var nums = [1, 3, 5, 6];
+var target = 1
+
+function SearchPosition(nums, target) {
+    var position = 0
+    for (var i = 0; i <= nums.length; i++) {
+        if(nums[i] == target){
+            return i
+        }
+        if (target > nums[i] && target < nums[i + 1]) {
+            position = i + 1
+        }
+        else if (target > nums[nums.length - 1]) {
+            position = nums.length
+        }
+    }
+    return position
+}
+
+console.log(SearchPosition(nums, target));
+
+
+
+
+
+
+

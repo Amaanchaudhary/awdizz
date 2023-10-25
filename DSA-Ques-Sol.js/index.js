@@ -220,6 +220,30 @@ function palindrome(str) {
     }
    
 }
-
 console.log(palindrome(str));
+*/
+
+/*
+//Q13. Remove duplicate from sorted array
+// Input: nums = [0,0,1,1,1,2,2,3,3,4]
+// Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+
+    var nums = [0,0,1,1,1,2,2,3,3,4,]
+
+    for(var i = 0 ; i < nums.length-1 ; i++){
+        if(nums[i] == nums[i+1]){
+            // console.log(nums, "in iteration" , i);
+            console.log(nums[i] ,"=", nums[i+1])
+            console.log(nums, "in iteration" , i);
+            nums.splice(i , 1 )
+            console.log("after del",nums);
+            console.log("\n")
+            i--;
+        }else{
+            console.log(nums[i] ,"=", nums[i+1])
+            console.log(nums,"no del in iteration",i)
+            console.log("\n")
+        }
+    }
+    console.log(nums);
 */

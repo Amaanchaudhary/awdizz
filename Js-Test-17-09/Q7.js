@@ -2,7 +2,7 @@
 Q7.Write a function in JS called removeDuplicates that takes an array as an arguement 
 and returns a new array with duplicate element removed
 */
-var array = [ 1, 3, 3 ,2, 4, 5 , 5, 6]
+var array = [ 0,0,1,1,1,2,2,3,3,4]
 
 function removeDuplicate(array) {
     var NewArray = []
@@ -17,4 +17,5 @@ function removeDuplicate(array) {
             }
         } return NewArray;
 }
+
 console.log(removeDuplicate(array))
