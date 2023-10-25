@@ -247,3 +247,30 @@ console.log(palindrome(str));
     }
     console.log(nums);
 */
+
+/*
+//Q14. Find Insert Position  //35 on leetcode
+
+var nums = [1 , 4 ,6, 8];
+var target = 5
+
+function SearchPosition(nums, target) {
+    var position = 0
+    for (var i = 0; i <= nums.length; i++) {
+        if(nums[i] == target){
+            return i
+        }
+        else if(nums.length == 1 &&  target > nums[i]){
+            position =  i + 1
+        }
+        else if (target > nums[i] && target < nums[i + 1]) {
+            position = i + 1
+        }
+        else if (target > nums[nums.length - 1]) {
+            position = nums.length
+        }
+    }
+    return position
+}
+console.log(SearchPosition(nums, target));
+*/

@@ -127,6 +127,8 @@ switch (fruit){
     }
 */
 
+/*
+//Q find insert position.
 // Example 1:
 // Input: nums = [1,3,5,6], target = 5
 // Output: 2
@@ -139,8 +141,8 @@ switch (fruit){
 // Input: nums = [1,3,5,6], target = 7
 // Output: 4
 
-var nums = [1, 3, 5, 6];
-var target = 1
+var nums = [1];
+var target = 2
 
 function SearchPosition(nums, target) {
     var position = 0
@@ -148,7 +150,10 @@ function SearchPosition(nums, target) {
         if(nums[i] == target){
             return i
         }
-        if (target > nums[i] && target < nums[i + 1]) {
+        else if(nums.length == 1 &&  target > nums[i]){
+            position =  i + 1
+        }
+        else if (target > nums[i] && target < nums[i + 1]) {
             position = i + 1
         }
         else if (target > nums[nums.length - 1]) {
@@ -157,8 +162,8 @@ function SearchPosition(nums, target) {
     }
     return position
 }
-
 console.log(SearchPosition(nums, target));
+*/
 
 
 
