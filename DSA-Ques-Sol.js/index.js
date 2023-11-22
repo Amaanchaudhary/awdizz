@@ -248,29 +248,51 @@ console.log(palindrome(str));
     console.log(nums);
 */
 
-/*
+
 //Q14. Find Insert Position  //35 on leetcode
 
-var nums = [1 , 4 ,6, 8];
-var target = 5
+var nums = [1 , 2 ,3, 5];
+var target = 2
 
 function SearchPosition(nums, target) {
-    var position = 0
+    
     for (var i = 0; i <= nums.length; i++) {
-        if(nums[i] == target){
+        if(nums[i] >= target){
             return i
         }
-        else if(nums.length == 1 &&  target > nums[i]){
-            position =  i + 1
-        }
-        else if (target > nums[i] && target < nums[i + 1]) {
-            position = i + 1
-        }
-        else if (target > nums[nums.length - 1]) {
-            position = nums.length
-        }
-    }
-    return position
+    }return nums.length;
 }
 console.log(SearchPosition(nums, target));
-*/
+
+
+//Q15. Permutation
+// Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order.
+// Example 1:
+// Input: nums = [1,1,2]
+// Output:
+// [[1,1,2],
+//  [1,2,1],
+//  [2,1,1]]
+// Example 2:
+// Input: nums = [1,2,3]
+// Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+
+// var nums = [1 , 2 , 3];
+// var result = [];
+
+//     var i = 0;
+//     var temp = nums[i]  
+//     nums[i] = nums[i+1]   
+//     nums[i+1] = temp     
+
+//     console.log(nums)
+
+
+
+
+// const CompareArrays = (a , b) => {
+//     return JSON.stringify(a) === JSON.stringify(b);
+// }
+
+
+

@@ -127,7 +127,6 @@ switch (fruit){
     }
 */
 
-/*
 //Q find insert position.
 // Example 1:
 // Input: nums = [1,3,5,6], target = 5
@@ -141,30 +140,48 @@ switch (fruit){
 // Input: nums = [1,3,5,6], target = 7
 // Output: 4
 
-var nums = [1];
-var target = 2
+// var nums = [1 , 3 , 5 , 6];
+// var target = 5
 
-function SearchPosition(nums, target) {
-    var position = 0
-    for (var i = 0; i <= nums.length; i++) {
-        if(nums[i] == target){
-            return i
-        }
-        else if(nums.length == 1 &&  target > nums[i]){
-            position =  i + 1
-        }
-        else if (target > nums[i] && target < nums[i + 1]) {
-            position = i + 1
-        }
-        else if (target > nums[nums.length - 1]) {
-            position = nums.length
+// function SearchPosition(nums, target) {
+
+//     for (var i = 0; i <= nums.length; i++) {
+//         if(target <= nums[i]){
+//             return i
+//         }
+//     }return nums.length
+// }
+// console.log(SearchPosition(nums, target));
+
+
+//349 leet code
+var grid = [[0, 1, 0 ,0],
+            [1, 1, 1, 0],
+            [0, 1, 0, 0],
+            [1, 1, 0, 0]]
+
+var islandPerimeter = function (grid) {
+    var size = 0
+    for (var i = 0; i < grid.length; i++) {    
+        for (var j = 0; j < grid[i].length; j++) {
+            if(grid[i][j] == 1){                     // if found 1 at any place
+                size += 4                            // size + 4
+                console.log("size = ",size,' at itr', i,j)
+                if(j > 0 && grid[i][j-1] == 1){      // if found 1 before  
+                    size -= 2;                       // size -2
+                    console.log("size = ",size,'-2 bcauz of before at itr', i,j)
+                }                                       
+                if(i > 0 && grid[i-1][j] == 1){      // if found 1 above
+                    size -= 2;                       // size -2
+                    console.log("size = ",size,'-2 bcauz of top at itr', i,j)
+                }
+            }
         }
     }
-    return position
-}
-console.log(SearchPosition(nums, target));
-*/
+    return size
+};
 
+console.log(islandPerimeter(grid))
 
 
 
