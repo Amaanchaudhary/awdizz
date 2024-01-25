@@ -289,10 +289,38 @@ console.log(SearchPosition(nums, target));
 
 
 
-
 // const CompareArrays = (a , b) => {
 //     return JSON.stringify(a) === JSON.stringify(b);
 // }
 
 
+
+//*********js array map funtion*/
+
+const numbers = [9 , 25 , 4]
+// const newArr = numbers.map(Math.sqrt)   //return sqrt root of all numbers
+// console.log(newArr)
+
+// const newArr = numbers.map(myFunction)
+// console.log(newArr)
+
+function myFunction(num){
+    return num * 10
+}
+
+
+//******************* js map prac*/
+const map1 = new Map()
+
+map1.set('age' , 22)
+map1.set('name' , 'chaudhary')
+map1.set('salary' , 20000)
+
+
+map1.delete('age')
+// console.log(map1.get('salary'))
+// console.log(map1.size)
+
+map1['isManager'] = 'false'
+// console.log(map1)
 
